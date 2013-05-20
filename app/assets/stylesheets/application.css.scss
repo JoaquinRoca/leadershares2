@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+header {
+
+  padding: 3em 0;
+  min-width: 550px;
+
+  nav {
+    margin-top: 1.2em;
+  }
+
+}
+
+.container-fluid {
+  max-width: 950px;
+  margin: auto;
+}
