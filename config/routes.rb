@@ -1,4 +1,7 @@
 Leadershares2::Application.routes.draw do
   root to: 'pages#home'
-  resources :videos
+  resources :videos, only: [:index]
+
 end
+
+
