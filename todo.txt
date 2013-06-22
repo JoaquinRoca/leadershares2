@@ -1,4 +1,49 @@
 todo.txt
 
-- Add video (url, title, interviewee)
+- Add video (url, title, interviewee[tied to user account?])
+- Add users (first, last, email, admin, interviewee, password, confirm password remember token)
+- Edit users
+- Destroy users
+- Admin user permissions (destroy)
+- Signed in user permissions
+- Request feedback
+- Submit feedback (for self and for others)
+- Show feedback requested of others
+- Show feedback requests from others
+- Show user list
+- Add assessment (competencies, questions, assessment name)
+- Add questions (text)
+		Create permissions for Questions
+		show questions action
+		New question action for admins
+		Create question action for admins
+		Edit question action
+		Index to show all questions
+		Destroy question action
+		Define a request action
+		Define a target action
+		Make sure a signed in user can answer questions
+		Make sure it is the correct user to answer questions
+		Create an admin action
+- Add competencies (name, text, An admin should be able to create a new competency)
+- Sessions controller (sign in and out)
+- Relationship controller
+		Create relationship action (request feedback)
+		target id (same as rater id for self-rating)
+		rater id
+		relationship (self, peer, supervisor, direct report, friend, family, etc.)
+- Ratings controller
+		Make sure the correct user is doing the rating
+		Only an admin can detroy a rating
+		Create a new rating action
+		Create a rating score action
+		Make sure a rater is signed in to give ratings
+		Make sure the correct rater is signed in to give ratings
+		Create an admin user check
+		The person leaving the rating should match the person who was requested to rate
+		person shouldn't have to sign in to leave a rating
+		There should be a unique url sent to the rater who was requested
+- Create a new rating (make sure it is the right rating relationship pair)
+- Application controller (Force signout to prevent CSRF attacks)
+- Assessments controller (An admin should be able to create a new assessment)
 - 
