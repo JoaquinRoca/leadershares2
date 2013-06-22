@@ -1,5 +1,8 @@
-%h2 Video list
+%h1 Video list
 
 %ul
 	- @videos.each do |video|
-		%li= video.title
+		%h2= video.title 
+		%li= video.url
+		%li= video.interviewee
+		%br
