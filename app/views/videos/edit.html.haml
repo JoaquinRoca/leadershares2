@@ -1,0 +1,9 @@
+%h1
+	Edit:
+	= @video.title
+
+= simple_form_for(@video) do |f|
+	= f.input :title
+	= f.input :url
+	= f.input :interviewee
+	= f.button :submit

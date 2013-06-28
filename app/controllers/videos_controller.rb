@@ -10,6 +10,10 @@ class VideosController < ApplicationController
 		end
 	end
 
+	def edit
+		@video = Video.find(params[:id])
+	end
+
   def index
     @videos = Video.all
   end
@@ -20,6 +24,13 @@ class VideosController < ApplicationController
 
   def show
   	@video = Video.find(params[:id])
+  end
+
+  def update
+  	@video = Video.find(params[:id])
+  	@video.update_attributes!(params[:video])
+  	flash[:notice] = 'Thanks for updating the video!'
+  	redirect_to @video
   end
 
 
