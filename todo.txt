@@ -1,5 +1,17 @@
 todo.txt
 
+Ability for users to:
+- admin - add new video (url, title, interviewee[tied to user account?])
+- admin - remove video
+- admin - edit video
+
+
+User Story:
+as a ROLE
+I want FEATURE
+so that BENEFIT
+
+
 - Add video (url, title, interviewee[tied to user account?])
 - Add users (first, last, email, admin, interviewee, password, confirm password remember token)
 - Edit users
