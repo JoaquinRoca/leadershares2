@@ -28,9 +28,12 @@ class VideosController < ApplicationController
 
   def update
   	@video = Video.find(params[:id])
-  	@video.update_attributes!(params[:video])
-  	flash[:notice] = 'Thanks for updating the video!'
-  	redirect_to @video
+  	if @video.update_attributes(params[:video])
+  	 flash[:notice] = 'Thanks for updating the video!'
+  	 redirect_to @video
+    else
+      render 'edit'
+    end
   end
 
 
