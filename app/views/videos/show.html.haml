@@ -1,5 +1,6 @@
 %h1= @video.title
 %p= link_to 'edit', edit_video_path(@video)
+%p= link_to 'delete me', @video, method: :delete
 
 %p= @video.url
 %p= @video.interviewee

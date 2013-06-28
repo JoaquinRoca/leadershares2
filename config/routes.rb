@@ -1,6 +1,6 @@
 Leadershares2::Application.routes.draw do
   root to: 'pages#home'
-  resources :videos, only: [:create, :edit, :index, :new, :show, :update] 
+  resources :videos, only: [:create, :destroy, :edit, :index, :new, :show, :update] 
 
   # A note on routes:
   # index allows you to display a list of items
