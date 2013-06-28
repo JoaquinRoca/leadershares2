@@ -2,7 +2,9 @@
 
 %ul
 	- @videos.each do |video|
-		%h2= video.title 
-		%li= video.url
+		%h2 
+			Title:  
+			= video.title 
+		%li= " URL: #{video.url}"
 		%li= video.interviewee
 		%br
