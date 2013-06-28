@@ -4,9 +4,8 @@ Ability for users to:
 - visitor - see list of videos - DONE
 - admin - add new video - DONE
 - admin - view video detail page - DONE
-
-- admin - remove video
-- admin - edit video
+- admin - edit video - DONE
+- admin - remove video - DONE
 
 
 User Story:
