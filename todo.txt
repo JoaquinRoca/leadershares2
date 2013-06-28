@@ -1,7 +1,10 @@
 todo.txt
 
 Ability for users to:
-- admin - add new video (url, title, interviewee[tied to user account?])
+- visitor - see list of videos - DONE
+- admin - add new video - DONE
+- admin - view video detail page - DONE
+
 - admin - remove video
 - admin - edit video
 
