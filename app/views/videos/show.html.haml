@@ -1,1 +1,7 @@
 %h1= @video.title
+%p= link_to 'edit', edit_video_path(@video)
+
+%p= @video.url
+%p= @video.interviewee
+
+%p= link_to 'back to video list', videos_path
