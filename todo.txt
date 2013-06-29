@@ -8,6 +8,9 @@ Ability for users to:
 - admin - remove video - DONE
 
 
+- Why isn't the navbar collapsing into a button when the screen is smaller than 940px?
+
+
 User Story:
 as a ROLE
 I want FEATURE
