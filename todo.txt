@@ -8,7 +8,7 @@ Ability for users to:
 - admin - remove video - DONE
 
 
-- Why isn't the navbar collapsing into a button when the screen is smaller than 940px?
+- Look at show.html.haml and take away the bold tags in front of the descriptions
 
 
 User Story:

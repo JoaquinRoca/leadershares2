@@ -3,13 +3,13 @@
 %p= link_to 'delete me', @video, method: :delete
 
 %p
-	%a{:style => "color: gray"}= "Title:"
+	%b{:style => "color: gray"}= "Title:"
 	= @video.title
 %p
-	%a{:style => "color: gray"}= "URL:"
+	%b{:style => "color: gray"}= "URL:"
 	= @video.url
 %p
-	%a{:style => "color: gray"}= "Interviewee:"
+	%b{:style => "color: gray"}= "Interviewee:"
 	= @video.interviewee
 
 %p= link_to 'back to video list', videos_path
