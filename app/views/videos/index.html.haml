@@ -1,10 +1,19 @@
 %h1 Video list
 
-%ul.video-list
-	- @videos.each do |video|
-		%h2 
-			Title:  
-			= link_to video.title, video 
-		%li= " URL: #{video.url}"
-		%li= video.interviewee
-		%br
+%table.table.table-striped
+- @videos.each do |video|
+	%thead
+		%tr
+			%th
+				Description
+			%th
+			%th
+			%th
+	%tbody
+		%tr
+			%td
+				= link_to video.title, video
+			%td
+				%li= " URL: #{video.url}"
+			%td= video.interviewee
+			%td
