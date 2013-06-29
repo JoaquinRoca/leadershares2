@@ -1,19 +1,22 @@
 %h1 Video list
+%h5= link_to 'Create New Video', new_video_path
 
-%table.table.table-striped
-- @videos.each do |video|
+%table.table.table-bordered.table-striped
 	%thead
 		%tr
-			%th
-				Description
-			%th
-			%th
-			%th
+			%th= "Title"
+			%th= "URL"
+			%th= "Interviewee"
+			%th= "Edit"
 	%tbody
-		%tr
-			%td
-				= link_to video.title, video
-			%td
-				%li= " URL: #{video.url}"
-			%td= video.interviewee
-			%td
+		- @videos.each do |video|
+			%tr
+				%td
+					-if video.title?
+						= link_to video.title, video
+					- else
+						= link_to "Video #{video.id}", video
+				%td
+					= " URL: #{video.url}"
+				%td= video.interviewee
+				%td= link_to 'edit', edit_video_path(video)
