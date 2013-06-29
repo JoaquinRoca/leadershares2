@@ -10,6 +10,7 @@ group :assets do
   gem 'coffee-rails'
   gem 'sass-rails'
   gem 'uglifier', '>= 1.0.3'
+	gem 'bootstrap-sass', '~> 2.3.2.0'
 end
 
 group :development, :test do
