@@ -1,4 +1,7 @@
 Leadershares2::Application.routes.draw do
+  resources :assessments
+
+
   resources :users
 
 

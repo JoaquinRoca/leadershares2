@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Competency:
+  = @assessment.competency
+%p
+  %b Question:
+  = @assessment.question
+%p
+  %b Name:
+  = @assessment.name
+
+= link_to 'Edit', edit_assessment_path(@assessment)
+\|
+= link_to 'Back', assessments_path
