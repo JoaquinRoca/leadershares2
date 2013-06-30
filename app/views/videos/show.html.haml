@@ -1,4 +1,10 @@
-%h1= @video.title
+%p#notice= notice
+
+%h1
+	-if @video.title?
+		= link_to @video.title, @video
+	- else
+		= link_to "Video #{@video.id}", @video
 %p= link_to 'edit', edit_video_path(@video)
 %p= link_to 'delete me', @video, method: :delete
 
