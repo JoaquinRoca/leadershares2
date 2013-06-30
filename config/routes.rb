@@ -1,4 +1,7 @@
 Leadershares2::Application.routes.draw do
+  resources :users
+
+
   root to: 'pages#home'
   resources :videos, only: [:create, :destroy, :edit, :index, :new, :show, :update] 
 

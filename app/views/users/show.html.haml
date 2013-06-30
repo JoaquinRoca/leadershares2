@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b First:
+  = @user.first
+%p
+  %b Last:
+  = @user.last
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Admin:
+  = @user.admin
+%p
+  %b Interviewee:
+  = @user.interviewee
+%p
+  %b Password:
+  = @user.password
+%p
+  %b Remembertoken:
+  = @user.rememberToken
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path
