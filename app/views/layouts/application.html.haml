@@ -9,25 +9,12 @@
     = csrf_meta_tags
 
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-          = link_to("LeaderShares", root_path, :class => "brand")
-          .nav-collapse.collapse
-            %ul.nav
-              %li= link_to("Home", root_path)
-            %ul.nav.pull-right
-              %li= link_to("Videos", videos_path)
-              %li= link_to("Link 2", root_path)
-              %li= link_to("Link 3", root_path)
+    = render 'layouts/header'
 
-    .container-fluid
-      %header.row
-
+    .container
       .notice= flash[:notice]
       .error= flash[:error]
 
       #main= yield
 
-  %footer &copy; JR 2013
+    = render 'layouts/footer'
