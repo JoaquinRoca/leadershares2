@@ -6,9 +6,13 @@ Ability for users to:
 - admin - view video detail page - DONE
 - admin - edit video - DONE
 - admin - remove video - DONE
+- admin - add new user - DONE
+- admin - view user detail page - DONE
+- admin - edit user - DONE
+- admin - remove user - DONE
 
 
-- Look at show.html.haml and take away the bold tags in front of the descriptions
+- Look at show.html.haml (users and videos) and take away the bold tags in front of the descriptions
 
 
 User Story:
@@ -16,19 +20,13 @@ as a ROLE
 I want FEATURE
 so that BENEFIT
 
-
-- Add video (url, title, interviewee[tied to user account?])
-- Add users (first, last, email, admin, interviewee, password, confirm password remember token)
-- Edit users
-- Destroy users
+- Add assessment (competencies, questions, assessment name)
 - Admin user permissions (destroy)
 - Signed in user permissions
 - Request feedback
 - Submit feedback (for self and for others)
 - Show feedback requested of others
 - Show feedback requests from others
-- Show user list
-- Add assessment (competencies, questions, assessment name)
 - Add questions (text)
 		Create permissions for Questions
 		show questions action
