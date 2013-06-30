@@ -1,0 +1,7 @@
+.box
+	%p
+		= link_to assessment.name, assessment
+		%p= " Name: #{assessment.name}"
+		%p= " Competencies: #{assessment.competency}"
+		%p= " Questions: #{assessment.question}"
+		%p= link_to 'edit', edit_assessment_path(assessment)
