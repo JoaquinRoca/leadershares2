@@ -1,0 +1,8 @@
+.box
+	%p
+		= link_to user.email, user
+		%p= " First: #{user.first}"
+		%p= " Last: #{user.last}"
+		%p= " Admin?: #{user.admin}"
+		%p= " Interviewee?: #{user.interviewee}"
+		%p= link_to 'edit', edit_user_path(user)

@@ -1,31 +1,5 @@
-%h1 Listing users
+%h1 User list
+%h5= link_to 'Create New User', new_user_path
 
-%table
-  %tr
-    %th First
-    %th Last
-    %th Email
-    %th Admin
-    %th Interviewee
-    %th Password
-    %th Remembertoken
-    %th
-    %th
-    %th
-
-  - @users.each do |user|
-    %tr
-      %td= user.first
-      %td= user.last
-      %td= user.email
-      %td= user.admin
-      %td= user.interviewee
-      %td= user.password
-      %td= user.rememberToken
-      %td= link_to 'Show', user
-      %td= link_to 'Edit', edit_user_path(user)
-      %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New User', new_user_path
+.users
+  = render @users
