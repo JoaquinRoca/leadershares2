@@ -1,23 +1,5 @@
-%h1 Listing assessments
+%h1 Assessment list
+%h5= link_to 'Create New Assessment', new_assessment_path
 
-%table
-  %tr
-    %th Competency
-    %th Question
-    %th Name
-    %th
-    %th
-    %th
-
-  - @assessments.each do |assessment|
-    %tr
-      %td= assessment.competency
-      %td= assessment.question
-      %td= assessment.name
-      %td= link_to 'Show', assessment
-      %td= link_to 'Edit', edit_assessment_path(assessment)
-      %td= link_to 'Destroy', assessment, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Assessment', new_assessment_path
+.assessments
+  = render @assessments
