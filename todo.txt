@@ -10,7 +10,10 @@ Ability for users to:
 - admin - view user detail page - DONE
 - admin - edit user - DONE
 - admin - remove user - DONE
-
+- admin - add new assessment - DONE
+- admin - view assessment detail page - DONE
+- admin - edit assessment - DONE
+- admin remove assessment - DONE
 
 - Look at show.html.haml (users and videos) and take away the bold tags in front of the descriptions
 
