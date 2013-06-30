@@ -1,0 +1,9 @@
+.box
+	%p
+		-if video.title?
+			= link_to video.title, video
+		- else
+			= link_to "Video #{video.id}", video
+		%p= " URL: #{video.url}"
+		%p= " Interviewee: #{video.interviewee}"
+		%p= link_to 'edit', edit_video_path(video)
