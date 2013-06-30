@@ -23,7 +23,6 @@ as a ROLE
 I want FEATURE
 so that BENEFIT
 
-- Add assessment (competencies, questions, assessment name)
 - Admin user permissions (destroy)
 - Signed in user permissions
 - Request feedback
