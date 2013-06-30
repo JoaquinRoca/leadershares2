@@ -2,8 +2,8 @@
 	Edit:
 	= @video.title
 
-= simple_form_for(@video) do |f|
-	= f.input :title
-	= f.input :url
-	= f.input :interviewee
-	= f.button :submit
+= render 'form'
+
+= link_to 'Show', @video
+\|
+= link_to 'Back', videos_path
