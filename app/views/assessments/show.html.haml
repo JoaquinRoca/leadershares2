@@ -1,15 +1,19 @@
 %p#notice= notice
 
+%h1
+  = "Assessment Name:"
+  = @assessment.name
+%p= link_to 'edit', edit_assessment_path(@assessment)
+%p= link_to 'delete me', @assessment, method: :delete
+
 %p
-  %b Competency:
+  %b{:style => "color: gray"}= "Name:"
+  = @assessment.name
+%p
+  %b{:style => "color: gray"}= "Competency:"
   = @assessment.competency
 %p
-  %b Question:
+  %b{:style => "color: gray"}= "Question:"
   = @assessment.question
-%p
-  %b Name:
-  = @assessment.name
 
-= link_to 'Edit', edit_assessment_path(@assessment)
-\|
-= link_to 'Back', assessments_path
+%p= link_to 'back to assessment list', assessments_path
