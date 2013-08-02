@@ -7,13 +7,13 @@
 %p= link_to 'delete me', @user, method: :delete
 
 %p
-  %b{:style => "color: gray"}= "First:"
+  .caption First:
   = @user.first
 %p
-  %b{:style => "color: gray"}= "Last:"
+  .caption Last:
   = @user.last
 %p
-  %b{:style => "color: gray"}= "email:"
+  .caption Email:
   = @user.email
 
 %p= link_to 'back to user list', users_path
