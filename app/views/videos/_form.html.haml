@@ -15,5 +15,8 @@
   .field
     = f.label :interviewee
     = f.text_field :interviewee
+  .field
+  = f.association :competencies
+
   .actions
     = f.submit 'Save'
