@@ -1,21 +1,21 @@
 %p#notice= notice
 
 %h1
-	-if @video.title?
-		= link_to @video.title, @video
-	- else
-		= link_to "Video #{@video.id}", @video
-%p= link_to 'edit', edit_video_path(@video)
-%p= link_to 'delete me', @video, method: :delete
+  -if @video.title?
+    = link_to @video.title, @video
+  - else
+  = link_to "Video #{@video.id}", @video
+  %p= link_to 'edit', edit_video_path(@video)
+  %p= link_to 'delete me', @video, method: :delete
 
 %p
-	%b{:style => "color: gray"}= "Title:"
-	= @video.title
+  .caption Title:
+  = @video.title
 %p
-	%b{:style => "color: gray"}= "URL:"
-	= @video.url
+  .caption URL:
+  = @video.url
 %p
-	%b{:style => "color: gray"}= "Interviewee:"
-	= @video.interviewee
+  .caption Interviewee:
+  = @video.interviewee
 
 %p= link_to 'back to video list', videos_path
