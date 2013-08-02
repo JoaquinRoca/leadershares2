@@ -1,0 +1,7 @@
+.box
+  %p
+    -if competency.title?
+      = link_to competency.title, competency
+    - else
+      = link_to "Competency #{competency.id}", competency
+    %p= link_to 'edit', edit_competency_path(competency)
