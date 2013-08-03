@@ -3,6 +3,8 @@ Leadershares2::Application.routes.draw do
 
   resources :competencies
 
+  resources :questions
+
   resources :users
 
 
