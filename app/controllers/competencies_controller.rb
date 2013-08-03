@@ -22,6 +22,15 @@ class CompetenciesController < ApplicationController
    @competency = Competency.new
   end
 
+  def show
+    @competency = Competency.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @competency }
+    end
+  end
+
   def update
     @competency = Competency.find(params[:id])
     if @competency.update_attributes(params[:competency])
