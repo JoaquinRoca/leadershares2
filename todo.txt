@@ -14,8 +14,7 @@ Ability for users to:
 - admin - view assessment detail page - DONE
 - admin - edit assessment - DONE
 - admin remove assessment - DONE
-
-- Look at show.html.haml (users and videos) and take away the bold tags in front of the descriptions
+- Look at show.html.haml (users and videos) and take away the bold tags in front of the descriptions - DONE
 
 
 User Story:
