@@ -16,7 +16,7 @@
     = f.label :interviewee
     = f.text_field :interviewee
   .field
-  = f.association :competencies
+    = f.association :competencies, as: :check_boxes
 
   .actions
     = f.submit 'Save'
