@@ -1,4 +1,4 @@
-class AssociateQuestionssAndCompetencies < ActiveRecord::Migration
+class AssociateQuestionsAndCompetencies < ActiveRecord::Migration
   def change
   create_table :competencies_questions do |t|
       t.belongs_to :competency
