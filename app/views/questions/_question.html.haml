@@ -1,0 +1,7 @@
+.box
+  %p
+    -if question.title?
+      = link_to question.title, question
+    - else
+      = link_to "Question #{question.id}", question
+    %p= link_to 'edit', edit_question_path(question)

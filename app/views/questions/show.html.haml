@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%h1
+  = "Question ID:"
+  = @question.id
+%p= link_to 'edit', edit_question_path(@question)
+
+%p
+  .caption Title:
+  = @question.title
+
+%p= link_to 'back to question list', questions_path
