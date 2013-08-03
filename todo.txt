@@ -16,6 +16,9 @@ Ability for users to:
 - admin remove assessment - DONE
 - Look at show.html.haml (users and videos) and take away the bold tags in front of the descriptions - DONE
 
+- Check on Competency_Question association (if you try to edit a competency you'll see)
+- Change the style for how competencies are being shown under videos
+
 
 User Story:
 as a ROLE
