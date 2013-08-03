@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%h1
+  = "Competency ID:"
+  = @competency.id
+%p= link_to 'edit', edit_competency_path(@competency)
+
+%p
+  .caption Title:
+  = @competency.title
+
+%p= link_to 'back to competency list', competencies_path
